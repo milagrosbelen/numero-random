@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(154, 231, 255);
+}
+
+#content {
+    border: 1px solid blue;
+    height: 70%;
+    width: 50%;
+    border-radius: 1em;
+    box-shadow: 5px 2px 12px 2px  blue;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: rgb(0, 0, 187);
+    text-decoration: underline;
+}
+div#inputs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 15%;
+    width: 100%;
+    margin-left: 12em;
+    margin-top: 3em;
+}
+
+#num1{
+    height: 5em;
+    width: 10em;
+    border: 1px solid blue;
+    border-radius: 1em;
+    background-color: rgb(200, 200, 255);
+}
+#num2{
+    height: 5em;
+    width: 10em;
+    border: 1px solid blue;
+    border-radius: 1em;
+    background-color: rgb(200, 200, 255);
+}
+
+#operacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: rgb(0, 0, 187);
+    background-color: rgb(209, 209, 255);
+    border-color: blue;
+    height: 10%;
+    width: 30%;
+    margin-left: 18em;
+    margin-top: 3em;
+    border-radius: 1em;
+}
+#reiniciar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: rgb(0, 0, 187);
+    background-color: rgb(209, 209, 255);
+    border-color: blue;
+    height: 10%;
+    width: 30%;
+    margin-left: 18em;
+    box-shadow: 1px 1px 6px 2px blue;
+    border-radius: 1em;
+}
+#opciones {
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  
+}
+table {
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+th, td {
+    border: 2px solid blue;
+    padding: 10px;
+    font-size: 2em;
+    background-color: rgb(200, 200, 255);
+    width: 30px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  th:hover, td:hover {
+    transform: scale(1.2);
+    background-color: rgb(176, 195, 255);
+  }
+
+  #prf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: blue;
+  }
+/* Estilos generales (para pantallas grandes) */
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Estilos específicos para pantallas menores a 768px (tablets y móviles) */
+@media screen and (max-width: 768px) {
+    #content {
+        width: 90%; /* Reducir el ancho */
+        height: auto; /* Ajustar altura automáticamente */
+    }
+
+    h1 {
+        font-size: 20px; /* Reducir tamaño del título */
+        text-align: center;
+    }
+
+    #inputs {
+        display: flex;
+        flex-direction: column; /* Poner los inputs uno debajo del otro */
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    input {
+        width: 80%; /* Ajustar ancho de los inputs */
+        margin-bottom: 10px; /* Espacio entre inputs */
+    }
+
+    #operacion, #reiniciar {
+        width: 50%; /* Botones más anchos */
+        font-size: 18px;
+        margin-left: 10em;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para móviles más pequeños (menos de 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        position: relative;
+        
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #operacion, #reiniciar {
+        width: 65%;
+        height: 20%;
+        font-size: 12px;
+        margin-left: 5em;
+        margin-bottom: 5em;
+    }
+    div#inputs {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 5%;
+        width: 100%;
+        gap: 10px;
+        margin-left: 7em;
+       
+    }
+
+    #num1, #num2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 30%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        background-color: rgb(154, 231, 255);
+    }
+    table {
+        border: none;
+        position: relative;
+        bottom: 4.5em;
+    }
+    #prf {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 1em;
+        text-transform: uppercase;
+        color: blue;
+        position: relative;
+        bottom: 1em;
+      }
+      #opciones {
+        display: none;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+      position: relative;
+      top: 1em;
+    }
+}
