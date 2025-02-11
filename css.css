@@ -250,7 +250,7 @@ body {
         align-content: center;
         font-size: 1em;
         text-transform: uppercase;
-        color: blue;
+        color: rgb(255, 255, 255);
         position: relative;
         bottom: 1em;
       }
@@ -272,14 +272,14 @@ body {
     
     border: 1px solid blue;
     height: 70%;
-    width: 50%;
+    width: 90%;
     border-radius: 1em;
     box-shadow: 5px 2px 12px 2px  blue;
 }
 .titulo0{
  position: relative;
  top: 5em;
- font-size: 2em;
+ font-size: 3em;
  color: white;
 }
 #btn0 {
@@ -293,7 +293,7 @@ body {
     align-content: center;
     align-items: center;
     position: relative;
-    left: 3em;
+    left: 9em;
     top: 20em;
     width: 9em;
     height: 3em;
