@@ -7,6 +7,16 @@ let resta = document.getElementById('resta');
 let multi = document.getElementById('multi');
 let divi = document.getElementById('divi');
 let reiniciar = document.getElementById('reiniciar');
+let btnprincipal = document.getElementById('btn0');
+let contenidosecond = document.getElementById('content');
+let contenidofirsrt = document.getElementById('content0');
+
+
+btnprincipal.addEventListener('click', ()=> {
+    contenidosecond.style.display = 'block';
+    contenidofirsrt.style.display = 'none';
+
+})
 
 
 btn.addEventListener('click', ()=> {
